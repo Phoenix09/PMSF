@@ -19,6 +19,8 @@ if (strtolower($map) === "monocle") {
     } else {
         $scanner = new \Scanner\RocketMap();
     }
+} elseif (strtolower($map) === "custom") {
+      $scanner = new \Scanner\Custom();
 }
 
 if (empty($_POST['id'])) {

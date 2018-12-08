@@ -17,6 +17,8 @@ if (strtolower($map) === "monocle") {
     } else {
         $scanner = new \Scanner\RocketMap();
     }
+} elseif (strtolower($map) === "custom") {
+    $scanner = new \Scanner\Custom();
 }
 if (isset($_POST['cell_id'])) {
     $return_weather = $scanner->get_weather_by_cell_id($_POST['cell_id']);
