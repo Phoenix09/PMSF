@@ -100,7 +100,6 @@ class Custom extends Scanner
 
         $data = array();
         $i = 0;
-        error_log(print_r($conds, true));
         foreach ($gyms as $gym) {
             $guard_pid = null;
             $gym["guard_pokemon_id"] = null;
